@@ -1,9 +1,3 @@
-/*
- * Secure Network Encryption Module ~
- * Compile with: gcc -O2 -Wall -Wextra -D_FORTIFY_SOURCE=2 -fstack-protector-strong \
- *               -fPIE -pie securelink.c -lsodium -lcrypto -pthread -o securelink
- */
-
 #define _GNU_SOURCE
 #include <stdio.h>
 #include <stdlib.h>
@@ -1297,6 +1291,9 @@ void run_tests(void) {
 int main(int argc, char *argv[]) {
     (void)argc; 
     (void)argv;
+    
+    printf("Sanctum | Secure Network Encryption Module\n");
+    printf("Using AES-256-GCM and ChaCha20-Poly1305\n\n");
     
     run_tests();
     
