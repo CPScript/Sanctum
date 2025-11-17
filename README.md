@@ -1,7 +1,7 @@
 ## Sanctum - Network Encryption Library
 
-OVERVIEW
-C library for encrypted network communications using AES-256-GCM and 
+> OVERVIEW
+> * C library for encrypted network communications using AES-256-GCM and 
 ChaCha20-Poly1305. Includes session management, key rotation, replay 
 protection, packet fragmentation, and traffic obfuscation.
 
